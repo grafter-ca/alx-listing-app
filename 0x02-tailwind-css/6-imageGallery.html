@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="p-4 w-1/2 bg-red-200">Flexbox Item 1</div>
+            <div class="p-4 w-1/2 bg-red-400">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="grid  grid-cols-1 lg:grid-cols-3 gap-4 p-4">
+        <img   class=" object-cover h-60 w-full" src="https://i.postimg.cc/VYmGNr77/image.png" alt="Watch POSTER IMAGE">
+        <img   class=" object-cover h-60 w-full" src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg" alt="Camera POSTER IMAGE">
+        <img   class=" object-cover h-60 w-full" src="https://tse3.mm.bing.net/th/id/OIP.Tg-BJiNhMy_sLfNhCgUPcAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Statue POSTER IMAGE">
+        <img   class=" object-cover h-60 w-full" src="https://tse2.mm.bing.net/th/id/OIP.zwPTCKvKY6ubszSfIsbIUwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product rayout POSTER IMAGE">
+        <img   class=" object-cover h-60 w-full" src="https://tse1.mm.bing.net/th/id/OIP.QRhwfmHHvMuLaobD4l0_mQHaEH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wed design POSTER IMAGE">
+        <img   class=" object-cover h-60 w-full" src="https://tse3.mm.bing.net/th/id/OIP.S086qubD3-EK3WnbBfKU2QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coding in action POSTER IMAGE">
+        <img   class=" object-cover h-60 w-full" src="https://tse4.mm.bing.net/th/id/OIP.-sRPwii8g_xMOJqvSiY6OAHaEV?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Front-end tools POSTER IMAGE">
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+
+</html>
