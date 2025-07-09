@@ -1,0 +1,14 @@
+# Step 1: Install Node.js and npm (if not already installed)
+# (On Ubuntu/Debian)
+sudo apt update
+sudo apt install nodejs npm
+
+# Step 2: Check if Node.js and npm are installed
+node -v
+npm -v
+
+# Step 3: Install SASS globally using npm
+sudo npm install -g sass
+
+# Step 4: Verify the installation
+sass --version
